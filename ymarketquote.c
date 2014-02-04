@@ -420,7 +420,8 @@ void main_loop(void) {
 				if(!aboutwin) {
 					aboutwin = AboutmuiObject, MUIA_Aboutmui_Application, App, End;
 				}
-				if(aboutwin)
+				
+                if(aboutwin)
 					set(aboutwin,MUIA_Window_Open,TRUE);
 				else
 					DisplayBeep(0);
@@ -464,6 +465,7 @@ void main_loop(void) {
 
 			case MEN_DELETE:
 				remove("ram:stockquote.csv");
+
 				break;
 
 			case MEN_MUIPREFS:
