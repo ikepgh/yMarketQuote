@@ -37,7 +37,8 @@ struct Library  *MUIMasterBase;
 enum {
 	ADD_METHOD = 1,
 
-	MEN_PROJECT, MEN_EXCHANGEHELP, MEN_TAGHELP, MEN_ABOUT, MEN_QUIT, MEN_SETTINGS, MEN_PREFS, MEN_DELETE, MEN_MUIPREFS,
+	MEN_PROJECT, MEN_EXCHANGEHELP, MEN_TAGHELP, MEN_ABOUT, MEN_ABOUTMUI,
+    MEN_QUIT, MEN_SETTINGS, MEN_PREFS, MEN_DELETE, MEN_MUIPREFS,
 };
 
 static struct NewMenu MenuData1[]=
@@ -47,6 +48,7 @@ static struct NewMenu MenuData1[]=
 	{NM_ITEM,  "Yahoo Tag Help",              "P", 0, 0,  (APTR)MEN_TAGHELP      },
 	{NM_ITEM,  NM_BARLABEL,                    0 , 0, 0,  (APTR)0                },
 	{NM_ITEM,  "About...",                    "?", 0, 0,  (APTR)MEN_ABOUT        },
+	{NM_ITEM,  "About MUI...",				   0,  0, 0,  (APTR)MEN_ABOUTMUI     },
 	{NM_ITEM,  NM_BARLABEL,                    0 , 0, 0,  (APTR)0                },
 	{NM_ITEM,  "Quit",                        "Q", 0, 0,  (APTR)MEN_QUIT         },
     {NM_TITLE, "Settings",       	    	   0 , 0, 0,  (APTR)MEN_SETTINGS     },
@@ -63,7 +65,8 @@ version 0.0.8 (2/1/14)\n
 Connects to Yahoo and downloads market quotes\n
 \n";
 
-Object *App, *Win, *STR_quote, *STR_tag, *STR_tagsetting, *STR_stocksetting, *STR_refreshsetting;
+Object *App, *Win, *STR_quote, *STR_tag, *STR_tagsetting, *STR_stocksetting,
+*STR_refreshsetting, *aboutwin;
 BOOL running = TRUE;
 
 APTR scroll_output, txt_output, scroll_taghelp, win_taghelp, txt_taghelp,
@@ -411,6 +414,16 @@ void main_loop(void) {
 
 			case MEN_ABOUT:
 				MUI_Request(App, Win, 0, "About yMarketQuote", "*OK", about_text, NULL);
+				break;
+
+			case MEN_ABOUTMUI:
+				if(!aboutwin) {
+					aboutwin = AboutmuiObject, MUIA_Aboutmui_Application, App, End;
+				}
+				if(aboutwin)
+					set(aboutwin,MUIA_Window_Open,TRUE);
+				else
+					DisplayBeep(0);
 				break;
 
 			case MEN_QUIT:
