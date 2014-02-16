@@ -1,0 +1,63 @@
+Country,Exchange,Suffix
+Example:,csco.F    or...   cis.f,.F  .f
+Argentina,Buenos Aires Stock Exchange,.BA
+Austria,Vienna Stock Exchange,.VI
+Australia,Australian Stock Exchange,.AX
+Belgium,Brussels Stocks,.BR
+Brazil,BOVESPA-Sao Paolo Stock Exchange,.SA
+Canada,Toronto Stock Exchange,.TO
+Canada,TSX Venture Exchange,.V
+Chile,Santiago Stock Exchange,.SN
+China,Shanghai Stock Exchange,.SS
+China,Shenzhen Stock Exchange,.SZ
+Denmark,Copenhagen Stock Exchange,.CO
+France,Euronext,.NX
+France,Paris Stock Exchange,.PA
+Germany,Berlin Stock Exchange,.BE
+Germany,Bremen Stock Exchange,.BM
+Germany,Dusseldorf Stock Exchange,.DU
+Germany,Frankfurt Stock Exchange,.F
+Germany,Hamburg Stock Exchange,.HM
+Germany,Hanover Stock Exchange,.HA
+Germany,Munich Stock Exchange,.MU
+Germany,Stuttgart Stock Exchange,.SG
+Germany,XETRA Stock Exchange,.DE
+Hong Kong,Hong Kong Stock Exchange,.HK
+India,Bombay Stock Exchange,.BO
+India,National Stock Exchange of India,.NS
+Indonesia,Jakarta Stock Exchange,.JK
+Israel,Tel Aviv Stock Exchange,.TA
+Italy,Milan Stock Exchange,.MI
+Japan,Nikkei Indices,N/A
+Mexico,Mexico Stock Exchange,.MX
+Netherlands,Amsterdam Stock Exchange,.AS
+New Zealand,New Zealand Stock Exchange,.NZ
+Norway,Oslo Stock Exchange,.OL
+Portugal,Lisbon Stocks,.LS
+Singapore,Singapore Stock Exchange,.SI
+South Korea,Korea Stock Exchange,.KS
+South Korea,KOSDAQ,.KQ
+Spain,Barcelona Stock Exchange,.BC
+Spain,Bilbao Stock Exchange,.BI
+Spain,Madrid Fixed Income Market,.MF
+Spain,Madrid SE C.A.T.S.,.MC
+Spain,Madrid Stock Exchange,.MA
+Sweden,Stockholm Stock Exchange,.ST
+Switzerland,Swiss Exchange,.SW
+Taiwan,Taiwan OTC Exchange,.TWO
+Taiwan,Taiwan Stock Exchange,.TW
+UK,FTSE Indices,N/A
+UK,London Stock Exchange,.L
+USA,American Stock Exchange,N/A
+USA,BATS Exchange,N/A
+USA,Chicago Board of Trade,.CBT
+USA,Chicago Mercantile Exchange,.CME
+USA,Dow Jones Indexes,N/A
+USA,NASDAQ Stock Exchange,N/A
+USA,New York Board of Trade,.NYB
+USA,New York Commodities Exchange,.CMX
+USA,New York Mercantile Exchange,.NYM
+USA,New York Stock Exchange,N/A
+USA,OTC Bulletin Board Market,.OB
+USA,Pink Sheets,.PK
+USA,S & P Indices,N/A
