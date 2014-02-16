@@ -2,9 +2,9 @@ Short:   yMarketQuote
 Uploader:  ike@ezcyberspace.com (IKE)
 Author:  ikepgh
 Type:  biz/misc
-Version: 0.0.8
+Version: 0.1
 Architecture:  MorphOS
-Requires:  BetterString.mcc, TextEditor.mcc
+Requires:  BetterString, NListview
 Distribution: Any
 
 
@@ -26,6 +26,8 @@ INSTALLATION
 ------------
 
 Just place the yMarketQuote program wherever you'd like on your hard drive
+along with the 'data' folder and contents.  Program will not start without
+BetterString and NListview installed...
 
 USAGE
 -----
@@ -33,9 +35,13 @@ USAGE
 See Help menus in the program for a list of Stock Exchanges and Yahoo Tags
 Also, look at the 'hot help' bubbles to get an idea of program usage...
 
+Tested on MorphOS 3.4 and 3.5
+
 VERSION HISTORY
 --------------- 
 
+0.1   - added NListview functionality to replace TextEditor
+0.0.9 - internal compile/rewrite
 0.0.8 - first public release (SkyDog build)
 0.0.7 - source cleanup, added preferences settings
 0.0.6 - reworked internals, case, menus, startup, etc.
@@ -56,7 +62,7 @@ Enclosed version was built with libcurl 7.34.0 (without ssl and many others)
 Take a look at 'libcurl-build-options.txt' to get an idea of what not to
 include to get the program size down from 4.3MBs to only about 300k...
 
-Project is available on SourceForge...
+Project is available on SourceForge:
 
 https://sourceforge.net/projects/ymarketquote/
 
@@ -65,8 +71,13 @@ TO DO
 
 - Green/red indicators depending on market movement
 - Auto update stocks setting
-- Choice(s) of output formatting
+- Choice(s) of output formatting (html, etc.)
 - Other ideas?
+
+KNOWN BUGS
+----------
+
+- First row of stockquote output stays in the NList title row...
 
 LICENSE
 -------
@@ -86,7 +97,8 @@ ABOUT
 
 yMarketQuote is ©2014 IKE <ike@ezcyberspace.com>
 
-icon by Ken Lester
+-- icon by Ken Lester
+-- NList/parsecsv code based on ViewCSV...Thanks Watertonian!
 
 Look at some of my other projects and ports @
 http://www.ezcyberspace.com/programming.shtml
