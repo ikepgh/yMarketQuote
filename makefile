@@ -16,7 +16,7 @@ $(OBJDIR)ymarketquote.o : ymarketquote.c
 OBJS = $(OBJDIR)ymarketquote.o
 
 $(EXE) : $(OBJS)
-	gcc $(OBJS) $ -lcurl -s -Wall -o $(EXE)
+	gcc $(OBJS) $ -lcurl2 -s -Wall -o $(EXE)
 
 # target 'strip'
 
