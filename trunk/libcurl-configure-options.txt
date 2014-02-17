@@ -1,6 +1,7 @@
-Please note:  my version of libcurl is named 'libcurl2.a', hence -lcurl2 in the make file...
+Please note:  Use the below (or something similar) configure options:
 
-configure --without-ssl --disable-gopher --disable-smtp --disable-imap --disable-telnet --disable-pop3 --disable-ftp --disable-debug --disable-tftp --without-libssh2 --without-zlib
+configure --without-ssl --disable-gopher --disable-smtp --disable-imap --disable-telnet
+--disable-pop3 --disable-ftp --disable-debug --disable-tftp --without-libssh2 --without-zlib
 
   curl version:     7.34.0
   Host setup:       powerpc-unknown-morphos
