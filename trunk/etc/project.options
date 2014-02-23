@@ -1,0 +1,16 @@
+; project configuration (do not delete)
+
+(compiler
+
+    (alias "gcc/morphos/stable")
+
+    (makefile "makefile")
+
+    (make "bin:make -f %makefile %target")
+
+    (target "")
+
+    (executable "Work:Source/yMarketQuote/code-0/trunk/yMarketQuote")
+
+    (arguments "")
+)
