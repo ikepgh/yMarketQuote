@@ -1,8 +1,8 @@
-/* yMarketQuote 0.2 by IKE (compiled with gcc 2.95.3/MorphOS)
+/* yMarketQuote 0.1 by IKE (compiled with gcc 2.95.3/MorphOS)
  *
  * Connects to Yahoo and downloads market quotes
  *
- * ike@ezcyberspace.com   Date: 2/17/14
+ * ike@ezcyberspace.com   Date: 2/15/14
  *
  * NList/parsecsv code based on ViewCSV. Thanks Watertonian!
  *
@@ -17,12 +17,13 @@
 #include <proto/exec.h>
 #include <proto/muimaster.h>
 #include <clib/gadtools_protos.h>
+#include <libraries/mui.h>
 #include <MUI/BetterString_mcc.h>
 #include <MUI/NListview_mcc.h>
 #include <curl/curl.h>
 #include <SDI_hook.h>
 
-char *version = "$VER: yMarketQuote-0.2";
+char *version = "$VER: yMarketQuote-0.1";
 
 struct GfxBase *GfxBase;
 struct IntuitionBase *IntuitionBase;
@@ -66,7 +67,7 @@ static struct NewMenu MenuData1[]=
 
 char about_text[] =
 "\33cyMarketQuote © 2014 IKE\n
-version 0.2 (2/17/14)\n
+version 0.1 (2/15/14)\n
 Connects to Yahoo and downloads market quotes\n
 \n";
 

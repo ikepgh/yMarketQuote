@@ -3,7 +3,7 @@ Uploader:  ike@ezcyberspace.com (IKE)
 Author:  ikepgh
 Type:  biz/misc
 Version: 0.1
-Architecture:  MorphOS
+Architecture:  MorphOS, AmigaOS 3.9
 Requires:  BetterString, NListview
 Distribution: Any
 
@@ -35,7 +35,7 @@ USAGE
 See Help menus in the program for a list of Stock Exchanges and Yahoo Tags
 Also, look at the 'hot help' bubbles to get an idea of program usage...
 
-Tested on MorphOS 3.4 and 3.5
+Tested on MorphOS 3.4 and 3.5, AmigaOS 3.9
 
 VERSION HISTORY
 --------------- 
@@ -56,11 +56,15 @@ RECOMPILING
 
 Dependencies: libcurl 7.xx.x+
 
-Compile: gcc -o yMarketQuote ymarketquote.c -lcurl -s -Wall
+MorphOS Compile: gcc -o yMarketQuote ymarketquote.c -lcurl -s -Wall
 
-Enclosed version was built with libcurl 7.34.0 (without ssl and many others)
+AmigaOS Compile: gcc -o yMarketQuote ymarketquote.c -lcurl -lssl -lcrypto -ldl -lz -s Wall
+
+MorphOS version was built with libcurl 7.34.0 (without ssl and many others)
 Take a look at 'libcurl-build-options.txt' to get an idea of what not to
 include to get the program size down from 4.3MBs to only about 300k...
+
+AmigaOS version was built with libcurl 7.14.0, hence the extra dependencies and file size...
 
 Project is available on SourceForge:
 
