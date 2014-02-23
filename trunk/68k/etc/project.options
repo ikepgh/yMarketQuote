@@ -1,0 +1,12 @@
+; project configuration (do not delete)
+
+(compiler
+
+    (alias "gcc/classic/stable")
+
+    (makefile "makefile")
+
+    (make "make -f %makefile %target")
+
+    (target "")
+)
