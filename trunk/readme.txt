@@ -27,7 +27,7 @@ INSTALLATION
 
 Just place the yMarketQuote program wherever you'd like on your hard drive
 along with the 'data' folder and contents.  Program will not start without
-BetterString and NListview installed...
+BetterString and NListview .mcc's installed...
 
 USAGE
 -----
@@ -99,7 +99,7 @@ GNU General Public License for more details.
 ABOUT
 -----
 
-yMarketQuote is ©2014 IKE <ike@ezcyberspace.com>
+yMarketQuote copyright 2014 IKE <ike@ezcyberspace.com>
 
 -- icon by Ken Lester
 -- NList/parsecsv code based on ViewCSV...Thanks Watertonian!
